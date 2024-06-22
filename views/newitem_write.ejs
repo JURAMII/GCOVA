@@ -1,0 +1,20 @@
+<%- include('header.ejs') %>
+<main>
+    <div class="newitems w1440 re_w100">
+        <h2 class="main_tit">메뉴 등록</h2>
+    <% if(typeof errs !=='undefined'){ %> 
+        <% errs.forEach((err)=>{ %>
+            <h2><%= err.param %></h2>
+            <h2><%= err.msg %></h2>
+        <% })%>
+    <% }%>
+    <div class="newitems_form">
+        <form method="post" action="/itemWrite" enctype="multipart/form-data">
+            <input type="text" name="title" class="subject" placeholder="메뉴 이름" autofocus>
+            <input type="file" name="fileName" class="fileUp">
+            <input class="write_btn" type="submit" value="등록">
+        </form>
+    </div>
+    </div>
+</main>
+<%- include('footer.ejs') %>

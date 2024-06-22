@@ -1,0 +1,13 @@
+<%- include('header.ejs') %>
+    <main>
+        <div class="write_wrap update_wrap w1440 re_w100">
+            <h2 class="main_tit" autofocus>메뉴 수정</h2>
+            <form method="POST" action="/updateImg" enctype="multipart/form-data">
+                <input type="hidden" name="id" value="<%= row.id%>">
+                <input type="text" name="title" value="<%= row.title%>" class="subject" autofocus>
+                <input type="file" name="fileName" class="fileUp">
+                <input type="submit" value="저장" class="write_btn">
+            </form>
+        </div>
+    </main>
+<%- include('footer.ejs') %>

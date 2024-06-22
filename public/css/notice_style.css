@@ -1,0 +1,309 @@
+*{ font-family: "Noto Sans KR", sans-serif;}
+
+/* notice_list */
+.noti_wrap{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.noti_tit{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.noti_wrap table{
+    margin: 0 auto;
+}
+.noti_wrap th, td{
+    height: 61px;
+    padding: 10px 15px;
+}
+.noti_wrap tr:first-child{
+    border-top: 2px solid var(--main-orange);
+    border-bottom: 2px solid var(--main-orange);
+    font-size: 18px;
+    text-align: center;
+}
+.noti_wrap tr:first-child th:not(:nth-child(2)){
+    width: 130px;
+}
+.noti_wrap tr:first-child th:nth-child(2){
+    width: 800px;
+}
+.noti_wrap td{
+    border-bottom: 1px solid #ddd;
+}
+.noti_wrap td:first-child,td:last-child{
+    text-align: center;
+}
+.noti_wrap td:nth-child(2){
+    cursor: pointer;
+}
+.noti_wrap td:nth-child(2):hover{
+    font-weight: bold;
+}
+.search_wrap{
+    align-items: center;
+}
+.keybord{
+    position: relative;
+}
+.keybord a{
+    display: inline-block;
+    width: 21px;
+    position: absolute;
+    top: 20%;
+    right: 20px;
+}
+.search_wrap{
+    padding-top: 20px;
+    justify-content: center;
+    gap: 10px;
+}
+.search_wrap .write_btn{
+    margin: 0;
+    margin-left: 200px;
+}
+.search_wrap select{
+    display: block;
+    width: 180px; height: 47px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid var(--main-orange);
+    font-size: 18px;
+    padding-left: 10px;
+}
+.search_wrap input{
+    display: block;
+    width: 550px; height: 47px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid var(--main-orange);
+    font-size: 18px;
+    padding-left: 10px;
+}
+/* 차례 */
+.num_list{
+    justify-content: center;
+    padding-top: 50px;
+}
+.num_list a{
+    font-size: 18px;
+    padding: 20px;
+}
+.num_list a:first-child,.num_list a:last-child{
+    color: var(--main-orange);
+    font-weight: bold;
+}
+/* notice_detail */
+.detail_wrap{
+    padding: 100px 0 50px 0;
+}
+.detail_wrap h3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.detail_wrap p{
+    text-align: center;
+    border-bottom: 2px solid var(--main-orange);
+    font-size: 18px;
+    color: #6a6a6a;
+    padding: 10px 0;
+}
+.pre_wrap{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+pre{
+    padding: 0 20px;
+}
+.wBtn_wrap>.write_btn{
+   margin: 0 auto;
+}
+.wBtn_wrap2{
+    gap: 5px;
+}
+.write_btn{
+    display: block;
+    width: 100px; height: 50px;
+    background-color: var(--main-orange);
+    font-size: 18px;
+    color: var(--main-white);
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+/* notice_write */
+.write_wrap{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.write_wrap h2{
+    padding-bottom: 100px;
+    text-align: center;
+}
+.write_wrap form{
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+}
+.subject{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--main-orange);
+}
+textarea{
+    width: 100%;
+    height: 400px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--main-orange);
+    padding: 20px;
+    margin-bottom: 20px;
+    resize:none
+}
+.author{
+    justify-content: flex-end;
+    padding: 20px 0 50px 0;
+}
+.author div:first-child{
+    padding-right: 20px;
+}
+.author label{
+    font-size: 18px;
+}
+.author input{
+    width: 150px;
+    border: 1px solid var(--main-orange);
+    padding: 0 10px;
+}
+/* notice update*/
+
+/* 반응형 */
+@media screen and (max-width : 1024px){
+    .noti_wrap{
+        padding: 50px;
+    }
+    .noti_tit{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .search_wrap select{
+        width: 100px;
+        font-size: 16px;
+    }
+    .keybord input{
+        width: 400px;
+        font-size: 16px;
+    }
+    .search_wrap .write_btn{
+        margin-left: 50px;
+        font-size: 16px;
+    }
+    .detail_wrap{
+        padding-top: 100px;
+    }
+    .pre_wrap{
+        width: 100%;
+    }
+    pre{
+        width: 100%;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+    .write_wrap{
+        padding-top: 100px;
+    }
+    .write_wrap h2{
+        padding-bottom: 20px;
+    }
+    .write_wrap form{
+        width: 100%;
+    }
+    .subject{
+        font-size: 16px;
+    }
+    textarea{
+        font-size: 16px;
+    }
+    .author{
+        justify-content: center;
+    }
+    .author label{
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width : 768px){
+    .noti_wrap{
+        padding: 50px 20px;
+    }
+    table{
+        width: 100%;
+    }
+    th, td{
+        font-size: 12px;
+    }
+    .search_wrap select{
+        width: 60px;
+        font-size: 12px;
+    }
+    .keybord input{
+        width: 200px;
+        font-size: 12px;
+    }
+    .search_wrap .write_btn{
+        margin-left: 0px;
+        font-size: 12px;
+    }
+    .num_list{
+        padding-top: 20px;
+    }
+    .num_list a{
+        font-size: 14px;
+        padding: 10px;
+    }
+    .detail_wrap h3{
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    .detail_wrap p{
+        font-size: 14px;
+        padding-bottom: 0 0 5px 0;
+    }
+    pre{
+        font-size: 14px;
+    }
+    .write_wrap{
+        padding-bottom: 50px;
+    }
+    .write_btn{
+        width: 70px; height: 40px;
+        font-size: 12px;
+    }
+    .update_wrap .subject{
+        font-size: 14px;
+    }
+    .update_wrap textarea{
+        font-size: 14px;
+    }
+    .author{
+        padding-bottom: 30px;
+    }
+    .author label{
+        font-size: 12px;
+    }
+    .author input{
+        width: 100px;
+    }
+}

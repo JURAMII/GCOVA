@@ -1,0 +1,57 @@
+<%- include('header.ejs') %>
+<main>
+    <div class="noti_wrap w1440 re_w100">
+        <h2 class="main_tit noti_tit">공지사항</h2>
+    <table>
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>등록일</th>
+        </tr>
+        <% for(i=(page*page_list)-page_list; i<(page*page_list); i++){
+            console.log(i)
+            if(i > leng){
+                i++;
+            }else{
+                let row = rows[i]
+                %>
+
+            <tr>
+                <td><%= i + 1 %></td>
+                <td onclick="javascript:location.href='/detail?id=<%=row.id_notice %>'"><%= row.title_notice %></td>
+                <td><%= row.createDate_notice.split(' ')[0] %></td>
+            </tr>
+               <% }%>
+        <% }%>
+    </table>
+    <div class="num_list flex">
+        <% let num = parseInt(page);
+        let lastPage = Math.ceil(rows.length/page_list);
+        let val = (num <=1 )? num= 1 :num -1
+     %>
+        <a href='/notiList?page=<%= val %>'>이전</a>
+ 
+     <%
+     for(j=0; j<Math.ceil(rows.length/page_list); j++){ %>
+         <a href = '/notiList?page=<%= j+1 %>'><%= j+1 %></a>
+     <% } %>
+ 
+     <% let last = (num >= lastPage)? num = lastPage :num + 1 %>
+     <a href='/notiList?page=<%= last %>'>다음</a>
+    </div>
+    
+    <div class="search_wrap flex">
+        <select>
+            <option value="전체">전체</option>
+            <option value="제목">제목</option>
+            <option value="내용">내용</option>
+        </select>
+        <div class="keybord">
+            <input type="text" placeholder="검색어를 입력해주세요.">
+            <a href="#" role="button"><img src="./img/icon/icon_search.png" alt="검색"></a>
+        </div>
+        <button onclick="javascript:location.href='/notiWrite'" class="write_btn">작성하기</button>
+    </div>
+   </div>
+</main>
+<%- include('footer.ejs') %>

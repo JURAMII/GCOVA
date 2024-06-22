@@ -1,0 +1,129 @@
+*{ font-family: "Noto Sans KR", sans-serif;}
+
+/* write */
+.newitems{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.newitems h2{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.newitems_form{
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+}
+.fileUp{
+    height: 500px;
+    padding-top: 20px;
+}
+/* list */
+.newitem_wrap{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.newitem_wrap h2{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.newitem_wrap table{
+    width: 1200px;
+    margin: 0 auto;
+}
+.newitem_wrap th, td{
+    height: 61px;
+    padding: 10px 15px;
+}
+.newitem_wrap th:first-child, th:nth-child(2){
+    width: 150px;
+    cursor: pointer;
+}
+.newitem_wrap th:last-child{
+    width: 300px;
+}
+.newitem_wrap tr:first-child{
+    border-top: 2px solid var(--main-orange);
+    border-bottom: 2px solid var(--main-orange);
+    font-size: 18px;
+    text-align: center;
+}
+.newitem_wrap td{
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+.newitem_wrap td img{
+    width: 240px;
+    height: 145px;
+}
+/* detail */
+.newitemD_wrap h3{
+    border-bottom: 2px solid var(--main-orange);
+    padding-bottom: 50px;
+}
+.newitemDimg_wrap{
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+.newitemDimg_wrap img{
+    width: 500px;
+    height: 300px;
+}
+/* update */
+
+/* 반응형 */
+@media screen and (max-width : 1024px){
+    .newitem_wrap{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .newitem_wrap h2{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .newitem_wrap table{
+        width: 100%;
+    }
+    .newitems_form{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width : 768px){
+    .newitemD_wrap{
+        padding-top: 90px;
+    }
+    .newitemD_wrap h3{
+        padding-bottom: 30px;
+    }
+    .newitem_wrap th:first-child, th:nth-child(2){
+        width: 200px;
+    }
+    .newitem_wrap td img{
+        width: 150px;
+        height: 100px;
+    }
+    .newitemDimg_wrap{
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+    }
+    .newitemDimg_wrap img{
+        width: 300px;
+        height: 200px;
+    }
+    .fileUp{
+        font-size: 14px;
+        height: 300px;
+    }
+    .newitems{
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .newitems h2{
+        padding-bottom: 20px;
+    }
+    
+}

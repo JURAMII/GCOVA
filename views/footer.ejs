@@ -1,0 +1,144 @@
+<footer class="w100">
+    <div class="f_info_wrap w1440 flex re_w100">
+        <div class="f_info flex">
+            <h1 class="f_logo"><img src="./img/푸터로고1.png" alt="footer_logo"></h1>
+            <ul class="f_info_list flex">
+                <li><a href="">이용약관</a></li>
+                <li><a href="">개인정보처리방침</a></li>
+                <li><a href="">위치기반서비스</a></li>
+                <li><a href="">이메일무단수집거부</a></li>
+                <li><a href="">고객센터</a></li>
+                <li><a href="">찾아오시는길</a></li>
+                <li><a href="">사이트맵</a></li>
+            </ul>
+        </div>
+        <div class="call">
+            <h3>고객센터</h3>
+            <p>(평일 09:00~17:00)</p>
+            <h4>055-363-9300</h4>
+        </div>
+    </div>
+    <div class="f_btm w1440 flex re_w100">
+        <div class="g_info">
+            <p>
+                (주)지코바<br />
+                대표이사 : 구민 | 사업자등록번호 : 159-88-00580<br />
+                경상남도 양산시 어곡공단 3길 32 (주)지코바
+            </p>
+            <p>Copyright 1994 © gcova.co.kr All rights reserved.</p>
+        </div>
+        <ul class="sns flex">
+            <li><a href=""><img src="./img/icon/유튜브.png" alt="yt"></a></li>
+            <li><a href=""><img src="./img/icon/인스타.png" alt="ig"></a></li>
+            <li><a href=""><img src="./img/icon/페이스북.png" alt="fb"></a></li>
+            <li><a href=""><img src="./img/icon/트위터.png" alt="tw"></a></li>
+        </ul>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+//silde
+    // sec1
+    var swiper1 = new Swiper(".mySwiper1", {
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next1",
+            prevEl: ".swiper-button-prev1",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+
+    // sec3
+    var swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        centeredSlides: true,
+        loop: true,
+        effect: "coverflow",
+        observer: true,
+        observeParents: true,
+        navigation: {
+            nextEl: ".swiper-button-next2",
+            prevEl: ".swiper-button-prev2",
+        },
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 50,
+            modifier: 1,
+            slideShadows: false,
+        },
+        breakpoints: {
+            1025: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            }
+        }
+    });
+
+    //sec5
+    var swiper3 = new Swiper(".mySwiper3", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        centeredSlides: true,
+        loop: true,
+        speed: 500,
+        navigation: {
+            nextEl: ".swiper-button-next3",
+            prevEl: ".swiper-button-prev3",
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        }
+    });
+</script>
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1713101316092",
+		"key" : "2iy2f",
+		"mapWidth" : "1440",
+		"mapHeight" : "360"
+	}).render();
+	new daum.roughmap.Lander({
+		"timestamp" : "1713103231633",
+		"key" : "2iy2q",
+		"mapWidth" : "1440",
+		"mapHeight" : "360"
+	}).render();
+	new daum.roughmap.Lander({
+		"timestamp" : "1713102766734",
+		"key" : "2iy2n",
+		"mapWidth" : "1440",
+		"mapHeight" : "360"
+	}).render();
+	new daum.roughmap.Lander({
+		"timestamp" : "1713102849811",
+		"key" : "2iy2o",
+		"mapWidth" : "1440",
+		"mapHeight" : "360"
+	}).render();
+	new daum.roughmap.Lander({
+		"timestamp" : "1713102966393",
+		"key" : "2iy2p",
+		"mapWidth" : "1440",
+		"mapHeight" : "360"
+	}).render();
+</script>
+<script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<%- include('header.ejs') %>
+<main>
+    <div class="detail_wrap w1440 re_w100">
+    <h3 class="main_tit"><%= row.title_notice %></h3>
+    <p><%= row.createDate_notice.split(' ')[0] %></p>
+    <div class="pre_wrap">
+        <pre><%= row.content_notice %></pre>
+    </div>
+    <div class="wBtn_wrap flex">
+        <button onclick="javascript:location.href='/notiList'" class="write_btn">목록</button>
+        <div class="wBtn_wrap2 flex">
+            <button class="write_btn" onclick="javascript:location.href='/delete?id=<%=row.id_notice %>'">삭제</button>
+            <button class="write_btn" onclick="javascript:location.href='/update?id=<%=row.id_notice %>'">수정</button>
+        </div>
+    </div>
+    </div>
+</main>
+<%- include('footer.ejs') %>

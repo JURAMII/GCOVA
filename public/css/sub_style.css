@@ -1,0 +1,461 @@
+/* main */
+.main {
+   position: relative;
+}
+
+.sub_banner {
+   background-image: url(../img/bg_brand_banner.8dbd720.png);
+   height: 319px;
+   color: var(--main-white);
+   flex-direction: column;
+   justify-content: center;
+   padding-left: 20%;
+}
+
+.sub_banner p:first-child {
+   font-size: 32px;
+   font-style: italic;
+   text-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, .5);
+}
+
+.sub_banner p:last-child {
+   font-size: 56px;
+   font-weight: bold;
+   font-style: italic;
+   text-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, .5);
+}
+
+.tap {
+   justify-content: space-evenly;
+   border-bottom: 1px solid #ddd;
+}
+.tap1{
+   border-bottom: 2px solid black;
+}
+.tap li a {
+   width: 122px;
+   display: block;
+   font-size: 22px;
+   text-align: center;
+   padding: 20px 0;
+}
+
+/* section */
+/* sec1 */
+.sub_banner2 {
+   background-image: url(../img/bg_ceo_banner.55e391c.png);
+   height: 200px;
+   justify-content: center;
+   align-items: center;
+   border-bottom: 2px solid var(--main-orange);
+}
+
+.sub_banner2 p {
+   font-size: 30px;
+   text-align: center;
+}
+
+.sub_banner2 span {
+   display: inline-block;
+   font-weight: bold;
+   color: var(--main-orange);
+}
+
+.hello p:first-child {
+   font-size: 19px;
+   padding: 100px 40px 90px;
+}
+
+.hello p:last-child {
+   padding-bottom: 50px;
+   font-size: 20px;
+   font-weight: bold;
+   text-align: end;
+}
+
+.employee {
+   width: 100%;
+   height: 300px;
+   background-image: url(../img/직원.png);
+   background-size: cover;
+   background-position: center;
+   opacity: 0.5;
+}
+
+/* sec2 */
+.con2 {
+   padding-bottom: 100px;
+}
+
+.con2 h2 {
+   padding: 100px 0;
+   text-align: center;
+   position: relative;
+}
+
+.con2 h2::before {
+   content: '';
+   /* display: block; */
+   background: url(../img/business-163501_1920.jpg);
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: -1;
+   background-attachment: fixed;
+   opacity: 0.2;
+}
+
+.history {
+   padding-bottom: 40px;
+}
+
+.history dt {
+   font-size: 30px;
+   position: relative;
+}
+
+.history dd {
+   margin-left: 100px;
+   padding-top: 5px;
+   position: relative;
+   font-size: 18px;
+}
+
+.history dd span {
+   display: inline-block;
+   padding-right: 10px;
+   font-weight: bold;
+   color: var(--main-orange);
+   position: relative;
+}
+
+/* sec3 */
+.ci h2 {
+   text-align: center;
+   padding-top: 100px;
+}
+
+.ci_logo {
+   justify-content: center;
+}
+
+.ci h3 {
+   font-size: 20px;
+   padding-bottom: 30px;
+}
+
+.color_wrap {
+   justify-content: space-between;
+   border-bottom: 1px solid #ddd;
+   padding-bottom: 100px;
+}
+
+.color li:first-child {
+   font-size: 18px;
+   font-weight: bold;
+   padding-bottom: 10px;
+}
+
+.color li:nth-child(2) {
+   width: 350px;
+   height: 85px;
+   display: inline-block;
+   margin: 5px;
+}
+
+.color:first-child li:nth-child(2) {
+   background-color: var(--main-orange);
+}
+
+.color:nth-child(2) li:nth-child(2) {
+   background-color: var(--main-white);
+   border: 1px solid var(--main-black);
+}
+
+.color:last-child li:nth-child(2) {
+   background-color: var(--main-black);
+}
+
+.character h2 {
+   text-align: center;
+   padding-top: 100px;
+}
+
+.character p {
+   text-align: center;
+   padding-top: 5px;
+   font-size: 18px;
+   padding-bottom: 95px;
+}
+
+.char {
+   justify-content: center;
+   padding-bottom: 100px;
+}
+
+.char dd {
+   text-align: center;
+   padding-top: 10px;
+}
+
+/* sec4 */
+.con4 h2 {
+   padding: 100px 0;
+   text-align: center;
+}
+
+.map_wrap {
+   padding-bottom: 100px;
+}
+
+.map_wrap>div {
+   padding-bottom: 70px;
+}
+
+.map_tit {
+   font-size: 20px;
+   font-weight: bold;
+   padding-bottom: 30px;
+}
+
+.map_tit2 {
+   padding-top: 10px;
+   font-size: 14px;
+}
+.pop_icon{
+   width: 150px;
+   height: 150px;
+   position: fixed;
+   top: 400px;
+   right: 5px;
+   z-index: 99;
+}
+.pop_icon img{
+   width: 150px;
+   height: 150px;
+   margin-bottom: 15px;
+   border-radius: 50%;
+   box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.16);
+
+}
+.pop_icon img:hover{
+   transform: scale(0.9);
+}
+
+/* 반응형 */
+@media screen and (max-width : 1024px) {
+   .sub_banner {
+      height: 200px;
+   }
+
+   .sub_banner p:first-child {
+      font-size: 20px;
+   }
+
+   .sub_banner p:last-child {
+      font-size: 40px;
+   }
+
+   .sub_banner2 p {
+      font-size: 24px;
+      text-align: center;
+   }
+
+   .hello p:first-child {
+      padding: 70px 40px 60px;
+   }
+
+   .employee {
+      height: 200px;
+   }
+
+   .con2 h2 {
+      padding: 50px 0;
+   }
+
+   .con2 {
+      padding-bottom: 50px;
+   }
+
+   .history {
+      padding-bottom: 20px;
+   }
+
+   .history dt {
+      font-size: 24px;
+   }
+
+   .history dd {
+      margin-left: 50px;
+      font-size: 16px;
+   }
+
+   .con2 {
+      padding-bottom: 100px;
+   }
+
+   .ci h2 {
+      padding-top: 50px;
+   }
+
+   .ci_logo img {
+      width: 400px;
+      height: 300px;
+   }
+
+   .ci h3 {
+      font-size: 18px;
+      padding: 20px 0;
+   }
+   .color li:first-child {
+      font-size: 16px;
+   }
+
+   .color li:nth-child(2) {
+      width: 289px;
+      height: 85px;
+   }
+   .color li:nth-child(3),li:nth-child(4),li:nth-child(5) {
+      font-size: 14px;
+   }
+
+   .character h2 {
+      padding-top: 50px;
+   }
+
+   .character p {
+      font-size: 14px;
+      padding-bottom: 70px;
+   }
+
+   .char {
+      padding-bottom: 50px;
+   }
+
+   .char dd {
+      font-size: 14px;
+   }
+   .con4 h2 {
+      padding: 50px 0;
+   }
+   
+   .map_wrap {
+      padding-bottom: 50px;
+   }
+   
+   .map_tit {
+      font-size: 18px;
+      padding-bottom: 20px;
+   }
+   .pop_icon{
+      display: none;
+   }
+}
+
+@media screen and (max-width : 768px) {
+   .sub_banner {
+      height: 150px;
+      padding-left: 15%;
+   }
+
+   .sub_banner p:first-child {
+      font-size: 18px;
+   }
+
+   .sub_banner p:last-child {
+      font-size: 24px;
+   }
+
+   .tap li a {
+      width: 90px;
+      font-size: 14px;
+      padding: 15px 0;
+   }
+
+   .sub_banner2 {
+      height: 100px;
+   }
+
+   .sub_banner2 p {
+      font-size: 18px;
+      text-align: center;
+   }
+
+   .hello p:first-child {
+      font-size: 16px;
+      padding: 40px 20px 40px;
+   }
+
+   .hello p:last-child {
+      padding-bottom: 30px;
+      font-size: 18px;
+   }
+
+   .employee {
+      height: 150px;
+   }
+   .con2 {
+      padding-bottom: 40px;
+   }
+   .history dt {
+      font-size: 20px;
+   }
+
+   .history dd {
+      font-size: 14px;
+      padding: 0;
+   }
+
+   .ci_logo img {
+      width: 200px;
+      height: 150px;
+   }
+
+   .ci h3 {
+      font-size: 14px;
+   }
+   .color_wrap{
+      padding-bottom: 0;
+      flex-direction: column;
+      align-items: center;
+   }
+   .color{
+      padding-bottom: 30px;
+   }
+   .color li:first-child {
+      font-size: 12px;
+   }
+
+   .color li:nth-child(2) {
+      width: 289px;
+      height: 85px;
+   }
+   .color li:nth-child(3),li:nth-child(4),li:nth-child(5) {
+      font-size: 12px;
+   }
+
+   .character h2 {
+      padding-top: 50px;
+   }
+
+   .character p {
+      font-size: 14px;
+      padding-bottom: 40px;
+   }
+
+   .char {
+      padding-bottom: 50px;
+   }
+
+   .char dd {
+      font-size: 14px;
+   }
+   .map_tit {
+      font-size: 14px;
+   }
+   .map_tit2 {
+      font-size: 10px;
+   }
+}

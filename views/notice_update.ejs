@@ -1,0 +1,23 @@
+<%- include('header.ejs') %>
+    <main>
+        <div class="write_wrap update_wrap w1440 re_w100">
+            <h2 class="main_tit">공지사항</h2>
+            <form method="POST" action="/updateNoti">
+                <input type="hidden" name="id" value="<%= row.id_notice %>">
+                <input type="text" name="title" value="<%= row.title_notice %>" class="subject">
+                <textarea name="cont" autofocus><%= row.content_notice %></textarea>
+                <div class="author flex">
+                    <div>
+                    <label>작성자</label>
+                    <input type="text" name="writer" value="<%= row.write_noitce %>">
+                    </div>
+                    <div>
+                    <label>비밀번호</label>
+                    <input type="password" name="pw" value="<%= row.pw_notice %>">
+                    </div>
+                </div>
+                <input type="submit" value="저장" class="write_btn">
+            </form>
+        </div>
+    </main>
+<%- include('footer.ejs') %>

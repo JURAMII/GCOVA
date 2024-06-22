@@ -1,0 +1,15 @@
+<%- include('header.ejs') %>
+<main>
+    <div class="detail_wrap newitemD_wrap w1440 re_w100">
+    <h3 class="main_tit"><%= row.title %></h3>
+    <div class="newitemDimg_wrap flex"><img src="<%= row.images %>" alt="이미지"></div>
+    <div class="wBtn_wrap flex">
+        <button onclick="javascript:location.href='/newitemlist?page=1'" class="write_btn">목록</button>
+        <div class="wBtn_wrap2 flex">
+            <button class="write_btn" onclick="javascript:location.href='/delete2?id=<%=row.id %>'">삭제</button>
+            <button class="write_btn" onclick="javascript:location.href='/update2?id=<%=row.id %>'">수정</button>
+        </div>
+    </div>
+    </div>
+</main>
+<%- include('footer.ejs') %>

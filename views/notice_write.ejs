@@ -1,0 +1,29 @@
+<%- include('header.ejs') %>
+    <main>
+        <div class="write_wrap w1440 re_w100">
+            <h2 class="main_tit">공지사항</h2>
+            <% if(typeof errs !=='undefined'){ %> 
+                <% errs.forEach((err)=>{ %>
+                    <h2><%= err.param %></h2>
+                    <h2><%= err.msg %></h2>
+                <% })%>
+            <% }%>
+            <!-- 에러메세지 -->
+               <form method="POST" action="/noti">
+                <input type="text" name="title" placeholder="제목" class="subject" autofocus>
+                <textarea name="cont" placeholder="내용을 입력해주세요."></textarea>
+                <div class="author flex">
+                    <div>
+                    <label>작성자</label>
+                    <input type="text" name="writer">
+                    </div>
+                    <div>
+                    <label>비밀번호</label>
+                    <input type="password" name="pw">
+                    </div>
+                </div>
+                <input type="submit" value="저장" class="write_btn">
+               </form>
+        </div>
+    </main>
+<%- include('footer.ejs') %>
