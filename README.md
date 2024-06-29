@@ -16,3 +16,5 @@ and Express & multer & Swiper
 express로 메인페이지와 서브페이지를 연결하고 mysql, multer를 사용하여 게시판 CRUD 기능을 처음으로 만들어보았습니다.
 
 반응형 구현까지 완료되었습니다.
+
+(현재는 메인페이지만 접속이 가능합니다.)
